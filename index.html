@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><title>Points Walk — Questions & QR</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="app.css">
+<script src="qrcode.min.js" defer></script><script src="pointswalk.js" defer></script><script src="admin.js" defer></script>
+</head><body>
+<header><h1>Points Walk — Questions & QR</h1><nav><a href="scoreboard.html">Scores & transfers</a></nav></header>
+<main>
+<p class="notice">Create a walk, print the question QR codes, and share them. Answers and scores stay on each player's device. Export results to combine them on another device.</p>
+<section class="panel"><div class="grid">
+<form id="questionForm">
+<input id="editingId" type="hidden">
+<div class="row2"><div><label for="qText">Question</label><input id="qText" type="text" maxlength="1000" required></div><div><label for="qCorrect">Correct</label><select id="qCorrect"><option>1</option><option>X</option><option>2</option></select></div></div>
+<div class="row3" style="margin-top:12px"><div><label for="a1">Answer 1</label><input id="a1" type="text" maxlength="300" required></div><div><label for="ax">Answer X</label><input id="ax" type="text" maxlength="300" required></div><div><label for="a2">Answer 2</label><input id="a2" type="text" maxlength="300" required></div></div>
+<div class="actions" style="margin-top:14px"><button class="btn-primary" id="btnAdd" type="submit">Add question</button><button id="btnResetForm" type="button">Clear</button></div><p id="status" role="status"></p>
+</form>
+<div><label>QR preview</label><div class="qrbox"><div id="liveQR"></div></div>
+<div class="actions" style="margin-top:10px"><button id="btnDownloadQR" disabled>Download QR (PNG)</button><button id="btnCopyLink" disabled>Copy link</button></div>
+<p class="small">Each QR carries its question, so it opens on another phone without a server. Reprint its QR after editing a question.</p></div>
+</div></section>
+<section class="panel" style="margin-top:16px"><div class="actions"><span class="badge">Questions: <span id="statTotal">0</span></span><button id="btnExport">Export questions</button><button id="btnImport">Import questions</button><input id="importFile" type="file" accept="application/json,.json" hidden><button class="btn-danger" id="btnWipe">Delete all questions</button></div><div class="list" id="list"></div></section>
+</main></body></html>

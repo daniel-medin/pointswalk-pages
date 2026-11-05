@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+.env
+.env.*
+data_scores.json
+data_submissions.csv
+pointswalk-results*.json
+pointswalk-scores*.csv
+*.key
+*.pem

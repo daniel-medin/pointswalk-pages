@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Points Walk — Scores</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="app.css">
+<script src="pointswalk.js" defer></script><script src="scoreboard.js" defer></script></head><body>
+<header><h1>Points Walk — Scores</h1><nav><a href="index.html">Questions & QR</a></nav></header>
+<main><section class="panel">
+<p class="notice">These scores are on this device, not a shared live scoreboard. Export results as JSON on each phone, then import those files here to combine scores. Reimporting a file does not count an answer twice.</p>
+<div class="tools"><label for="walkFilter">Walk</label><select id="walkFilter"></select></div>
+<div class="tools"><button id="btnRefresh">Refresh</button><button id="btnExportJson">Export results (JSON)</button><button id="btnImportJson">Import results (JSON)</button><input id="resultsFile" type="file" accept="application/json,.json" multiple hidden><button id="btnExportCsv">Export scores (CSV)</button><button class="btn-danger" id="btnReset">Reset scores on this device</button></div>
+<p id="status" role="status"></p><div class="table-scroll"><table class="table"><thead><tr><th>#</th><th>Name</th><th>Correct</th><th>Answered</th><th>%</th></tr></thead><tbody id="tbody"></tbody></table></div><p id="meta" class="small"></p>
+</section></main></body></html>

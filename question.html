@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><title>Points Walk — Fråga</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="app.css">
+<script src="pointswalk.js" defer></script><script src="question.js" defer></script></head>
+<body class="fullheight"><main class="player-main"><section class="card">
+<h1 id="qTitle">Laddar fråga…</h1><p class="small">Dina svar sparas på den här enheten. Exportera dina resultat när promenaden är klar.</p>
+<div id="nameLine" class="nameLine" hidden></div><div id="nameBox"><label for="nameInput">Ditt namn</label><input id="nameInput" type="text" maxlength="80" autocomplete="nickname"></div>
+<div class="row" style="margin:14px 0"><button class="btn" data-choice="1" id="btn1" disabled>1</button><button class="btn" data-choice="X" id="btnX" disabled>X</button><button class="btn" data-choice="2" id="btn2" disabled>2</button></div>
+<div class="actions"><button class="btn-submit" id="btnSubmit" disabled>Spara svar</button><button class="btn-skip" id="btnClear" disabled>Rensa val</button></div>
+<div class="msg" id="msg" role="status"></div><footer><a id="scoresLink" href="scoreboard.html">Mina resultat / exportera</a></footer>
+</section></main></body></html>

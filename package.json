@@ -1,0 +1,15 @@
+{
+  "name": "pointswalk-pages",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static QR quiz walk with device-local scores and result transfers",
+  "scripts": {
+    "test": "node --test tests/core.test.cjs",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0"
+  }
+}

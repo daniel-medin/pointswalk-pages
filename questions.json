@@ -1,0 +1,5 @@
+[
+ {"id":"q_sample1","text":"Vilket träd har ekollon?","a1":"Björk","ax":"Ek","a2":"Gran","correct":"X"},
+ {"id":"q_sample2","text":"Hur många ben har en spindel?","a1":"Sex","ax":"Tio","a2":"Åtta","correct":"2"},
+ {"id":"q_sample3","text":"Vilket väderstreck går solen upp i?","a1":"Öster","ax":"Väster","a2":"Norr","correct":"1"}
+]
