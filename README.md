@@ -28,8 +28,10 @@ server scores. The site needs connectivity to load; it is not an offline PWA.
 
 ## Migration and privacy
 
-This is a new repository. The private `daniel-medin/PointsWalk` repository and NAS
-deployment were not modified. Historical participant records, the old reset
+This is a new repository. The private `daniel-medin/PointsWalk` repository remains
+unchanged. After publication and verification, the owner requested decommissioning
+the NAS copy: its HTML/JS/CSS, PHP endpoints, runtime records, and Git metadata
+were deleted. Historical participant records, the old reset
 credential, and the original personal quiz are excluded from this public copy.
 The original files were retained in private migration staging on the owner's PC.
 Import original questions locally when needed; they are embedded in shared QR
